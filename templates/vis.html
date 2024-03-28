@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to my web page</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .welcome-message {
+            font-size: 2em;
+            margin-top: 50px;
+            animation: fade-in 2s;
+        }
+
+
+
+        .letgo-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 50px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .letgo-button:active {
+
+            background-color: aqua;
+            transform: scale(1.2, 1.2);
+        }
+
+        .letgo-button:hover {
+            background-color: #3e8e41;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-message">Welcome to my web page</div>
+        <button class="letgo-button" onclick="redirectToLoginPage()">Let's go to the login page</button>
+    </div>
+<script>
+    function redirectToLoginPage() {
+        window.location.href = "login";
+    }
+</script>
+</body>
+</html>
